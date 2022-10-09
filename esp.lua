@@ -187,7 +187,7 @@ function boxBase:Update()
     if ESP.FaceCamera then
         cf = CFrame.new(cf.p, cam.CFrame.p)
     end
-    local size = self.Size
+    local size = Vector3.new(1,1,1)
     local locs = {
         TopLeft = cf * ESP.BoxShift * CFrame.new(size.X/2,size.Y/2,0),
         TopRight = cf * ESP.BoxShift * CFrame.new(-size.X/2,size.Y/2,0),
